@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+
+<AnchorPane id="AnchorPane" prefHeight="548.0" prefWidth="887.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="backgammon.FXMLDocumentController">
+   <children>
+      <ImageView fitHeight="514.0" fitWidth="759.0" layoutX="6.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/bck.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="Starter" layoutX="766.0" layoutY="21.0" mnemonicParsing="false" onAction="#StartGameA" text="Start" />
+      <ImageView fx:id="StartBlueBigOne" fitHeight="236.0" fitWidth="62.0" layoutX="378.0" layoutY="311.0" pickOnBounds="true">
+         <image>
+            <Image url="@../images/orangeTri.png" />
+         </image>
+      </ImageView>
+      <Circle fx:id="RedOne" fill="#0b1c2c" layoutX="781.0" layoutY="507.0" radius="26.0" stroke="RED" strokeType="INSIDE" strokeWidth="10.0" />
+      <VBox fx:id="StartRedBigOne" alignment="BOTTOM_CENTER" layoutX="378.0" layoutY="291.0" prefHeight="236.0" prefWidth="62.0" />
+      <TextField fx:id="DiceResultOne" editable="false" layoutX="768.0" layoutY="211.0" prefHeight="25.0" prefWidth="26.0" text="0" />
+      <TextField fx:id="DiceResultTwo" editable="false" layoutX="836.0" layoutY="211.0" prefHeight="25.0" prefWidth="26.0" text="0" />
+      <Button fx:id="RollD" layoutX="755.0" layoutY="102.0" mnemonicParsing="false" onAction="#RollDiceB" prefHeight="66.0" prefWidth="126.0" text="ROLL!">
+          <graphic>
+            <ImageView fitHeight="72.0" fitWidth="80.0" layoutX="769.0" layoutY="245.0" pickOnBounds="true" preserveRatio="true">
+             <image>
+                <Image url="@../images/dice.png" />
+             </image>
+            </ImageView>              
+          </graphic>
+      </Button>
+
+   </children>
+</AnchorPane>
