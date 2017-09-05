@@ -1,28 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.shape.Circle?>
 
 <AnchorPane id="AnchorPane" prefHeight="548.0" prefWidth="887.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="backgammon.FXMLDocumentController">
    <children>
-      <ImageView fitHeight="514.0" fitWidth="759.0" layoutX="6.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="514.0" fitWidth="744.0" layoutX="6.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../images/bck.jpg" />
          </image>
       </ImageView>
-      <Button fx:id="Starter" layoutX="766.0" layoutY="21.0" mnemonicParsing="false" onAction="#StartGameA" text="Start" />
-      <ImageView fx:id="StartBlueBigOne" fitHeight="236.0" fitWidth="62.0" layoutX="378.0" layoutY="311.0" pickOnBounds="true">
+      <ImageView fx:id="StartRedSmallTwo" fitHeight="150.0" fitWidth="69.0" layoutX="681.0" layoutY="380.0" pickOnBounds="true">
+         <image>
+            <Image url="@../images/redTriangle.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="StartBlueSmallOne" fitHeight="236.0" fitWidth="62.0" layoutX="255.0" layoutY="311.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true">
          <image>
             <Image url="@../images/orangeTri.png" />
          </image>
       </ImageView>
-      <Circle fx:id="RedOne" fill="#0b1c2c" layoutX="781.0" layoutY="507.0" radius="26.0" stroke="RED" strokeType="INSIDE" strokeWidth="10.0" />
-      <VBox fx:id="StartRedBigOne" alignment="BOTTOM_CENTER" layoutX="378.0" layoutY="291.0" prefHeight="236.0" prefWidth="62.0" />
+      <ImageView fx:id="StartRedBigTwo" fitHeight="236.0" fitWidth="62.0" layoutX="6.0" layoutY="311.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true">
+         <image>
+            <Image url="@../images/orangeTri.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="236.0" fitWidth="62.0" layoutX="624.0" layoutY="311.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true">
+         <image>
+            <Image url="@../images/orangeTri.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="69.0" layoutX="629.0" layoutY="10.0" pickOnBounds="true" rotate="180.0">
+         <image>
+            <Image url="@../images/redTriangle.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="StartRedBigOne" fitHeight="150.0" fitWidth="69.0" layoutX="375.0" layoutY="10.0" pickOnBounds="true" rotate="180.0">
+         <image>
+            <Image url="@../images/redTriangle.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="StartRedSmallOne" fitHeight="150.0" fitWidth="69.0" layoutX="252.0" layoutY="10.0" pickOnBounds="true" rotate="180.0">
+         <image>
+            <Image url="@../images/redTriangle.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="StartBlueBigTwo" fitHeight="150.0" fitWidth="69.0" layoutX="6.0" layoutY="10.0" pickOnBounds="true" rotate="180.0">
+         <image>
+            <Image url="@../images/redTriangle.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="StartBlueSmallTwo" fitHeight="236.0" fitWidth="62.0" layoutX="694.0" layoutY="-6.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" rotate="180.0">
+         <image>
+            <Image url="@../images/orangeTri.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="Starter" layoutX="798.0" layoutY="45.0" mnemonicParsing="false" onAction="#StartGameA" text="Start" />
+      <ImageView fx:id="StartBlueBigOne" fitHeight="236.0" fitWidth="62.0" layoutX="378.0" layoutY="311.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true">
+         <image>
+            <Image url="@../images/orangeTri.png" />
+         </image>
+      </ImageView>
+      <Circle fx:id="Red" fill="#0b1c2c" layoutX="781.0" layoutY="502.0" radius="26.0" stroke="RED" strokeType="INSIDE" strokeWidth="10.0" />
       <TextField fx:id="DiceResultOne" editable="false" layoutX="768.0" layoutY="211.0" prefHeight="25.0" prefWidth="26.0" text="0" />
       <TextField fx:id="DiceResultTwo" editable="false" layoutX="836.0" layoutY="211.0" prefHeight="25.0" prefWidth="26.0" text="0" />
       <Button fx:id="RollD" layoutX="755.0" layoutY="102.0" mnemonicParsing="false" onAction="#RollDiceB" prefHeight="66.0" prefWidth="126.0" text="ROLL!">
@@ -34,6 +78,107 @@
             </ImageView>              
           </graphic>
       </Button>
+      <Circle fx:id="Red1" fill="#0b1c2c" layoutX="781.0" layoutY="494.0" radius="26.0" stroke="RED" strokeType="INSIDE" strokeWidth="10.0" />
+      <Circle fx:id="Red2" fill="#0b1c2c" layoutX="781.0" layoutY="488.0" radius="26.0" stroke="RED" strokeType="INSIDE" strokeWidth="10.0" />
+      <Circle fx:id="Red3" fill="#0b1c2c" layoutX="781.0" layoutY="481.0" radius="26.0" stroke="RED" strokeType="INSIDE" strokeWidth="10.0" />
+      <Circle fx:id="Red4" fill="#0b1c2c" layoutX="781.0" layoutY="476.0" radius="26.0" stroke="RED" strokeType="INSIDE" strokeWidth="10.0" />
+      <Circle fx:id="Red5" fill="#0b1c2c" layoutX="781.0" layoutY="468.0" radius="26.0" stroke="RED" strokeType="INSIDE" strokeWidth="10.0" />
+      <Circle fx:id="Red6" fill="#0b1c2c" layoutX="781.0" layoutY="462.0" radius="26.0" stroke="RED" strokeType="INSIDE" strokeWidth="10.0" />
+      <Circle fx:id="Red7" fill="#0b1c2c" layoutX="781.0" layoutY="455.0" radius="26.0" stroke="RED" strokeType="INSIDE" strokeWidth="10.0" />
+      <Circle fx:id="Red8" fill="#0b1c2c" layoutX="781.0" layoutY="450.0" radius="26.0" stroke="RED" strokeType="INSIDE" strokeWidth="10.0" />
+      <Circle fx:id="Red9" fill="#0b1c2c" layoutX="781.0" layoutY="444.0" radius="26.0" stroke="RED" strokeType="INSIDE" strokeWidth="10.0" />
+      <Circle fx:id="Red10" fill="#0b1c2c" layoutX="781.0" layoutY="436.0" radius="26.0" stroke="RED" strokeType="INSIDE" strokeWidth="10.0" />
+      <Circle fx:id="Red11" fill="#0b1c2c" layoutX="781.0" layoutY="429.0" radius="26.0" stroke="RED" strokeType="INSIDE" strokeWidth="10.0" />
+      <Circle fx:id="Red12" fill="#0b1c2c" layoutX="781.0" layoutY="424.0" radius="26.0" stroke="RED" strokeType="INSIDE" strokeWidth="10.0" />
+      <Circle fx:id="Red13" fill="#0b1c2c" layoutX="781.0" layoutY="418.0" radius="26.0" stroke="RED" strokeType="INSIDE" strokeWidth="10.0" />
+      <Circle fx:id="Red14" fill="#0b1c2c" layoutX="781.0" layoutY="410.0" radius="26.0" stroke="RED" strokeType="INSIDE" strokeWidth="10.0" />
+      <Circle fx:id="blu" fill="#f1ff21" layoutX="849.0" layoutY="502.0" radius="26.0" stroke="#2c536b" strokeType="INSIDE" strokeWidth="10.0" />
+      <Circle fx:id="blu1" fill="#f1ff21" layoutX="849.0" layoutY="496.0" radius="26.0" stroke="#2c536b" strokeType="INSIDE" strokeWidth="10.0" />
+      <Circle fx:id="blu2" fill="#f1ff21" layoutX="849.0" layoutY="488.0" radius="26.0" stroke="#2c536b" strokeType="INSIDE" strokeWidth="10.0" />
+      <Circle fx:id="blu3" fill="#f1ff21" layoutX="849.0" layoutY="481.0" radius="26.0" stroke="#2c536b" strokeType="INSIDE" strokeWidth="10.0" />
+      <Circle fx:id="blu4" fill="#f1ff21" layoutX="849.0" layoutY="476.0" radius="26.0" stroke="#2c536b" strokeType="INSIDE" strokeWidth="10.0" />
+      <Circle fx:id="blu5" fill="#f1ff21" layoutX="849.0" layoutY="468.0" radius="26.0" stroke="#2c536b" strokeType="INSIDE" strokeWidth="10.0" />
+      <Circle fx:id="blu6" fill="#f1ff21" layoutX="849.0" layoutY="462.0" radius="26.0" stroke="#2c536b" strokeType="INSIDE" strokeWidth="10.0" />
+      <Circle fx:id="blu7" fill="#f1ff21" layoutX="849.0" layoutY="455.0" radius="26.0" stroke="#2c536b" strokeType="INSIDE" strokeWidth="10.0" />
+      <Circle fx:id="blu8" fill="#f1ff21" layoutX="849.0" layoutY="450.0" radius="26.0" stroke="#2c536b" strokeType="INSIDE" strokeWidth="10.0" />
+      <Circle fx:id="blu9" fill="#f1ff21" layoutX="849.0" layoutY="442.0" radius="26.0" stroke="#2c536b" strokeType="INSIDE" strokeWidth="10.0" />
+      <Circle fx:id="blu10" fill="#f1ff21" layoutX="849.0" layoutY="436.0" radius="26.0" stroke="#2c536b" strokeType="INSIDE" strokeWidth="10.0" />
+      <Circle fx:id="blu11" fill="#f1ff21" layoutX="849.0" layoutY="429.0" radius="26.0" stroke="#2c536b" strokeType="INSIDE" strokeWidth="10.0" />
+      <Circle fx:id="blu12" fill="#f1ff21" layoutX="849.0" layoutY="424.0" radius="26.0" stroke="#2c536b" strokeType="INSIDE" strokeWidth="10.0" />
+      <Circle fx:id="blu13" fill="#f1ff21" layoutX="849.0" layoutY="416.0" radius="26.0" stroke="#2c536b" strokeType="INSIDE" strokeWidth="10.0" />
+      <Circle fx:id="blu14" fill="#f1ff21" layoutX="849.0" layoutY="410.0" radius="26.0" stroke="#2c536b" strokeType="INSIDE" strokeWidth="10.0" />
+      <Label layoutX="760.0" layoutY="194.0" text="Die One" />
+      <Label layoutX="828.0" layoutY="194.0" text="Die Two" />
+      <ImageView fitHeight="236.0" fitWidth="62.0" layoutX="505.0" layoutY="311.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true">
+         <image>
+            <Image url="@../images/orangeTri.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="236.0" fitWidth="62.0" layoutX="129.0" layoutY="311.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true">
+         <image>
+            <Image url="@../images/orangeTri.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="236.0" fitWidth="62.0" layoutX="572.0" layoutY="-6.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" rotate="180.0">
+         <image>
+            <Image url="@../images/orangeTri.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="236.0" fitWidth="62.0" layoutX="453.0" layoutY="-6.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" rotate="180.0">
+         <image>
+            <Image url="@../images/orangeTri.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="236.0" fitWidth="62.0" layoutX="317.0" layoutY="-6.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" rotate="180.0">
+         <image>
+            <Image url="@../images/orangeTri.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="236.0" fitWidth="62.0" layoutX="191.0" layoutY="-6.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" rotate="180.0">
+         <image>
+            <Image url="@../images/orangeTri.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="236.0" fitWidth="62.0" layoutX="74.0" layoutY="-6.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" rotate="180.0">
+         <image>
+            <Image url="@../images/orangeTri.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="69.0" layoutX="64.0" layoutY="380.0" pickOnBounds="true">
+         <image>
+            <Image url="@../images/redTriangle.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="69.0" layoutX="188.0" layoutY="380.0" pickOnBounds="true">
+         <image>
+            <Image url="@../images/redTriangle.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="69.0" layoutX="314.0" layoutY="380.0" pickOnBounds="true">
+         <image>
+            <Image url="@../images/redTriangle.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="69.0" layoutX="440.0" layoutY="380.0" pickOnBounds="true">
+         <image>
+            <Image url="@../images/redTriangle.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="69.0" layoutX="564.0" layoutY="380.0" pickOnBounds="true">
+         <image>
+            <Image url="@../images/redTriangle.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="69.0" layoutX="127.0" layoutY="10.0" pickOnBounds="true" rotate="180.0">
+         <image>
+            <Image url="@../images/redTriangle.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="69.0" layoutX="509.0" layoutY="10.0" pickOnBounds="true" rotate="180.0">
+         <image>
+            <Image url="@../images/redTriangle.png" />
+         </image>
+      </ImageView>
 
    </children>
 </AnchorPane>
